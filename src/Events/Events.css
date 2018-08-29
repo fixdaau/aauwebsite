@@ -1,0 +1,42 @@
+.event-card {
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.5);
+    height: 100px;
+    margin-top: -20px;
+    /* padding-left: 24px;
+    padding-right: 24px; */
+    padding-top: 16px;
+}
+
+.event-card-title {
+    font-family: Gotham-Rounded-Bold;
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.1px;
+    color: #484848;
+}
+
+.event-card-description {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    color: #484848;
+    margin-top: 5px;
+    margin-bottom: 24px;
+}
+
+.col-xs-6 {
+    padding-right: 6px !important;
+    padding-left: 6px !important;
+}
+
+.col-xs-12 {
+    padding-right: 6px !important;
+    padding-left: 6px !important;
+}
+
+.row {
+    padding-left: 24px;
+    padding-right: 24px;
+}

@@ -1,0 +1,2 @@
+export const facebookAccessToken = 'EAAKR1E2dWecBAP4rJxYR72QHxCwGjspOCMVMrOW0ejP9Ky0zqE6VuZBygOJ9qS4gaG4lPCkQJSdgI2IXuQlOnbWaoEEsj9ZBgz2D6vSQiNVhNZAo7iiA6ZBOwRiB1ZBPcPfwpYzZBX4pvqzhymjZC6S0mJkYUsiPitPAleDurP7NAZDZD';
+export const instagramAccessToken = '7031945715.1677ed0.4734f22aadd84f5c886973c97a1f390f';

@@ -1,0 +1,16 @@
+.instagram-title {
+    font-family: Gotham-Rounded-Bold;
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.1px;
+    color: #484848;
+}
+
+.instagram-description {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    color: #484848;
+    margin-top: 5px;
+    margin-bottom: 24px;
+}
