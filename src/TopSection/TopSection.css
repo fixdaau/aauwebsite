@@ -25,3 +25,7 @@
     line-height: 1.78;
     font-weight: 100;
 }
+
+.row {
+    padding: 0 !important;
+}

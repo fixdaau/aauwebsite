@@ -15,7 +15,6 @@ class Event extends Component {
         const { event } = this.props;
         axios.get(`https://graph.facebook.com/v3.1/${event.id}?fields=cover&access_token=${facebookAccessToken}`)
             .then(r => {
-                console.log('Facebook event cover:', r.data);
                 this.setState({ coverImageSrc: r.data.cover.source })
             })
     }
@@ -24,7 +23,6 @@ class Event extends Component {
         const { event } = this.props;
         const { coverImageSrc } = this.state;
 
-        console.log(event);
         return (
             <div className='event'>
                 <img className='event-image' src={coverImageSrc}></img>

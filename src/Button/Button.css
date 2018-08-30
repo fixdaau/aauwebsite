@@ -7,3 +7,8 @@
     font-family: Gotham-Bold;
     color: #26c775;
 }
+
+.button-filled {
+    color: white;
+    background-color: #26c775;
+}

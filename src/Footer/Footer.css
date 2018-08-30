@@ -1,0 +1,17 @@
+.footer-wrapper {
+    height: 62px;
+    border-top: solid 1px #eee;
+    margin-top: 40px;
+    padding: 18px 16px 24px 16px;
+}
+
+.footer-image {
+    margin-right: 8px;
+}
+
+.footer-text {
+    opacity: 0.5;
+    font-family: Gotham-Book;
+    font-size: 8px;
+    color: #484848;
+}

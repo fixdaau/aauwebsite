@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './TopSection.css';
+import { Row, Col } from 'react-bootstrap';
 
 class TopSection extends Component {
     render() {

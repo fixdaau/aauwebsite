@@ -1,3 +1,8 @@
+.instagram-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .instagram-title {
     font-family: Gotham-Rounded-Bold;
     font-size: 24px;
@@ -13,4 +18,55 @@
     color: #484848;
     margin-top: 5px;
     margin-bottom: 24px;
+}
+
+.instagram-card {
+    height: 95%;
+    width: 95%;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15), 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.instagram-card-header {
+    padding: 10px;
+    font-family: Gotham-Bold;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.instagram-card-header-image {
+    border: solid 0.5px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 32px;
+    margin-right: 12px;
+}
+
+.instagram-card-image>img {
+    width: 100%;
+}
+
+.instagram-card-description {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.1px;
+    color: #484848;
+}
+
+.col-xs-6 {
+    padding-right: 6px !important;
+    padding-left: 6px !important;
+}
+
+.col-xs-12 {
+    padding-right: 6px !important;
+    padding-left: 6px !important;
+}
+
+.row {
+    padding-left: 24px;
+    padding-right: 24px;
 }
