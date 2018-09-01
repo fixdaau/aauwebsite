@@ -2,8 +2,17 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './TopSection.css';
 import { Row, Col } from 'react-bootstrap';
+import Typist from 'react-typist';
 
 class TopSection extends Component {
+    state = {
+        typistKey: 1
+    }
+
+    restartAnimation = () => {
+        this.setState(prevState => ({ typistKey: prevState.typistKey + 1 }))
+    }
+
     render() {
         return (
             <div style={{ height: '95vh', backgroundImage: 'url("assets/img/banner-image.jpg")' }}>
@@ -14,7 +23,14 @@ class TopSection extends Component {
                             We are
                         </div>
                         <div className='title title-green'>
-                            Designers.
+                            <Typist key={this.state.typistKey} onTypingDone={this.restartAnimation} avgTypingDelay={130}>
+                                <span>Designers</span>
+                                <Typist.Backspace count={11} delay={200} />
+                                <span>Developers</span>
+                                <Typist.Backspace count={10} delay={200} />
+                                <span>Researchers</span>
+                                <Typist.Backspace count={11} delay={200} />
+                            </Typist>
                         </div>
                     </div>
                     <div className='banner-description'>

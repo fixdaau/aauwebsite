@@ -9,7 +9,8 @@
     "react": "^16.4.2",
     "react-bootstrap": "^0.32.3",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "react-typist": "^2.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
