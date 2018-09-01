@@ -8,11 +8,7 @@ class TopSection extends Component {
     state = {
         typistKey: 1
     }
-
-    restartAnimation = () => {
-        this.setState(prevState => ({ typistKey: prevState.typistKey + 1 }))
-    }
-
+    
     render() {
         return (
             <div style={{ height: '95vh', backgroundImage: 'url("assets/img/banner-image.jpg")' }}>
@@ -23,7 +19,7 @@ class TopSection extends Component {
                             We are
                         </div>
                         <div className='title title-green'>
-                            <Typist key={this.state.typistKey} onTypingDone={this.restartAnimation} avgTypingDelay={130}>
+                            <Typist key={this.state.typistKey} onTypingDone={() => this.setState(prevState => ({ typistKey: prevState.typistKey + 1 }))} avgTypingDelay={130}>
                                 <span>Designers</span>
                                 <Typist.Backspace count={11} delay={200} />
                                 <span>Developers</span>

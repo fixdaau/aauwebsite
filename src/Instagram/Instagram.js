@@ -11,7 +11,7 @@ class Instagram extends Component {
     render() {
         const { posts } = this.props;
         const slicedPosts = posts.slice(0, 3);
-        console.log(slicedPosts);
+
         return (
             <div className='instagram-wrapper'>
                 <Row>
@@ -31,16 +31,16 @@ class Instagram extends Component {
                             naturalSlideHeight={170}
                             totalSlides={3}
                         >
+                            <ButtonBack className='carousel-button'><img src='assets/img/left-arrow.svg' /></ButtonBack>
+                            <ButtonNext className='carousel-button carousel-next-button'><img src='assets/img/right-arrow.svg' /></ButtonNext>
                             <Slider>
                                 {slicedPosts.map((p, i) =>
                                     <Slide index={i} key={p.id} className='slide-style'>
                                         <InstagramCard post={p} />
                                     </Slide>
                                 )}
-
                             </Slider>
-                            {/* <ButtonBack>Back</ButtonBack>
-                            <ButtonNext>Next</ButtonNext> */}
+
                         </CarouselProvider>
                     </Col>
                     <Col xs={12}>

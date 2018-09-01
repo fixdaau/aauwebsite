@@ -56,6 +56,28 @@
     color: #484848;
 }
 
+.carousel-button {
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-7px);
+    z-index: 10000;
+}
+
+button:disabled {
+    display: none;
+}
+
+.carousel-next-button {
+    right: 0;
+    transform: translateX(7px);
+}
+
 .col-xs-6 {
     padding-right: 6px !important;
     padding-left: 6px !important;

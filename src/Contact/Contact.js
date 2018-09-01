@@ -27,7 +27,7 @@ class Contact extends Component {
                         </div>
                     </Col>
                     <Col xs={12}>
-                    <Button filled={true} text='Get in touch' />
+                    <Button filled={true} text='Get in touch' redirectUrl='mailto:fixdaau@gmail.com' />
                     </Col>
                 </Row>
             </div>

@@ -4,11 +4,16 @@ import './Events.css';
 import Event from '../Event/Event';
 import { Grid, Row, Col } from 'react-bootstrap'
 import Button from '../Button/Button';
+import moment from 'moment';
 
 class Events extends Component {
+    
+    mapEvents = events =>  events.filter(e => moment().diff(e.start_time, 'days') < 1).slice(0, 4);
+
     render() {
         const { events } = this.props;
-        const sliceEvents = events.slice(0, 4)
+        const mappedEvents = this.mapEvents(events);
+
         return (
             <div className='event-card'>
                 <Row>
@@ -19,10 +24,10 @@ class Events extends Component {
                     </Col>
                     <Col xs={12}>
                         <div className='event-card-description'>
-                            The events that you do not want to miss
+                            Upcoming events that you do not want to miss:
                         </div>
                     </Col>
-                    {sliceEvents.map(e =>
+                    {mappedEvents.map(e =>
                         <Col key={e.id} xs={6}>
                             <Event event={e} />
                         </Col>

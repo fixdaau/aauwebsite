@@ -14,30 +14,29 @@ class Event extends Component {
     componentDidMount() {
         const { event } = this.props;
         axios.get(`https://graph.facebook.com/v3.1/${event.id}?fields=cover&access_token=${facebookAccessToken}`)
-            .then(r => {
-                this.setState({ coverImageSrc: r.data.cover.source })
-            })
+            .then(r => this.setState({ coverImageSrc: r.data.cover.source }))
     }
 
     render() {
         const { event } = this.props;
         const { coverImageSrc } = this.state;
-
         return (
-            <div className='event'>
-                <img className='event-image' src={coverImageSrc}></img>
-                <div className='event-title'>
-                    {event.name}
+            <a href={`https://www.facebook.com/events/${event.id}`}>
+                <div className='event'>
+                    <img className='event-image' src={coverImageSrc}></img>
+                    <div className='event-title'>
+                        {event.name}
+                    </div>
+                    <div className='desc-wrapper'>
+                        <img className='icon' src='assets/img/location.svg' />
+                        <span className='desc-text'>{event.place.name}</span>
+                    </div>
+                    <div>
+                        <img className='icon' src='assets/img/calendar.svg' />
+                        <span className='desc-text'>{moment(event.start_time).format('lll')}</span>
+                    </div>
                 </div>
-                <div className='desc-wrapper'>
-                    <img className='icon' src='assets/img/location.svg' />
-                    <span className='desc-text'>{event.place.name}</span>
-                </div>
-                <div>
-                    <img className='icon' src='assets/img/calendar.svg' />
-                    <span className='desc-text'>{moment(event.start_time).format('lll')}</span>
-                </div>
-            </div>
+            </a>
         );
     }
 }
