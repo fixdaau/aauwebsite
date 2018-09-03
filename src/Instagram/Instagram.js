@@ -35,7 +35,7 @@ class Instagram extends Component {
                             <ButtonNext className='carousel-button carousel-next-button'><img src='assets/img/right-arrow.svg' /></ButtonNext>
                             <Slider>
                                 {slicedPosts.map((p, i) =>
-                                    <Slide index={i} key={p.id} className='slide-style'>
+                                    <Slide index={i} key={p.id} className='slide-style' onFocus={(e) => console.log(e)}>
                                         <InstagramCard post={p} />
                                     </Slide>
                                 )}
@@ -43,8 +43,12 @@ class Instagram extends Component {
 
                         </CarouselProvider>
                     </Col>
+                    {/* <Col xs={12}>
+                        <Button text='View this post' imgSrc='assets/img/instagram-green.svg' filled={false} redirectUrl='https://www.instagram.com/fixd_aau/' />
+                    </Col> */}
                     <Col xs={12}>
-                        <Button text='Show all posts' filled={false} redirectUrl='https://www.instagram.com/fixd_aau/' />
+                        {/* <div style={{ marginTop: '20px' }} /> */}
+                        <Button text='Show all posts' imgSrc='assets/img/instagram.svg' filled={true} redirectUrl='https://www.instagram.com/fixd_aau/' />
                     </Col>
                 </Row>
             </div>

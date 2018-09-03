@@ -4,7 +4,7 @@ import './Button.css';
 
 class Button extends Component {
     render() {
-        const { text, filled, redirectUrl } = this.props;
+        const { text, filled, redirectUrl, imgSrc } = this.props;
 
         let className = 'button';
 
@@ -14,7 +14,7 @@ class Button extends Component {
 
         return (
             <a href={redirectUrl}>
-                <button className={className}>{text}</button>
+                <button className={className}><img src={imgSrc} style={{ marginRight: '10px' }} />{text}</button>
             </a>
         );
     }

@@ -33,7 +33,7 @@ class Events extends Component {
                         </Col>
                     )}
                     <Col xs={12}>
-                        <Button text='Go to all events' filled={false} redirectUrl='https://www.facebook.com/pg/fixdAAU/events/' />
+                        <Button text='Go to all events' imgSrc='assets/img/facebook.svg' filled={true} redirectUrl='https://www.facebook.com/pg/fixdAAU/events/' />
                     </Col>
                 </Row>
             </div>
