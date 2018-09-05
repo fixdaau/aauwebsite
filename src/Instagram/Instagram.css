@@ -44,8 +44,19 @@
     margin-right: 12px;
 }
 
+/* .instagram-card-image {
+    height: 30%;
+} */
+
 .instagram-card-image>img {
     width: 100%;
+    object-fit: cover;
+}
+
+.open-post {
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
 }
 
 .instagram-card-description {
@@ -54,6 +65,8 @@
     line-height: 1.43;
     letter-spacing: 0.1px;
     color: #484848;
+    /* overflow: hidden; */
+    height: 14%;
 }
 
 .carousel-button {

@@ -18,19 +18,32 @@ class Contact extends Component {
                     <Col xs={12}>
                         <div className='contact-description'>
                             You can contribute with all sorts of things:
-                            <span className='contact-bullet-list'>
-                                <br />– Have an idea for a workshop? Let’s get in touch.
-                                <br />– Want to develop our website? We’ll set you up.
-                                <br />– Feelin’ like partying? Chat with our party crew.<br />
-                            </span>
-                            Anything is possible, but we need your help.
+                            <div className='contact-bullet'>
+                                <img style={{ width: '16px' }} src='assets/img/workshop.svg' /> Have an idea for a workshop? Let’s get in touch.
+                                </div>
+                            <div className='contact-bullet'>
+                                <img style={{ width: '16px' }} src='assets/img/develop.svg' /> Want to develop our website? We’ll set you up.
+                            </div>
+                            <div className='contact-bullet'>
+                                <img style={{ width: '16px' }} src='assets/img/party.svg' /> Feelin’ like partying? Chat with our party crew.<br />
+                            </div>
+                            <div style={{marginTop: '10px'}}>Anything is possible, but we need your help.</div>
                         </div>
                     </Col>
-                    <Col xs={12}>
-                    <Button filled={true} text='Get in touch' redirectUrl='mailto:fixdaau@gmail.com' />
+                    <Col xs={3}>
+                        <a href='mailto:fixdaau@gmail.com'><img src='assets/img/mail.svg' /></a>
+                    </Col>
+                    <Col xs={3}>
+                        <a href='https://www.facebook.com/pg/fixdAAU/'><img src='assets/img/facebook-1.svg' /></a>
+                    </Col>
+                    <Col xs={3}>
+                        <a href='https://fixd-aau.slack.com/join/shared_invite/enQtMzIxNzA1MDk2OTY0LWEwMGVmZjZkODM0NTM5ZmIyZGZhN2NjZDhjM2U3ZDExM2NmYzc4YWM2M2NkM2ExYjRlYjhhMTRiMDBlZTFkOWQ'><img src='assets/img/slack.svg' /></a>
+                    </Col>
+                    <Col xs={3}>
+                        <a href='https://www.instagram.com/fixd_aau/'><img src='assets/img/instagram-1.svg' /></a>
                     </Col>
                 </Row>
-            </div>
+            </div >
         );
     }
 }

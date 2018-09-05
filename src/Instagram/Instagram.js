@@ -28,8 +28,9 @@ class Instagram extends Component {
                     <Col xs={12}>
                         <CarouselProvider
                             naturalSlideWidth={100}
-                            naturalSlideHeight={170}
+                            naturalSlideHeight={115}
                             totalSlides={3}
+                            lockOnWindowScroll={true}
                         >
                             <ButtonBack className='carousel-button'><img src='assets/img/left-arrow.svg' /></ButtonBack>
                             <ButtonNext className='carousel-button carousel-next-button'><img src='assets/img/right-arrow.svg' /></ButtonNext>
@@ -61,15 +62,16 @@ const InstagramCard = ({ post }) => (
         <div className='instagram-card-header'>
             <img className='instagram-card-header-image' src='assets/img/insta_profile.jpg' />
             <span className='instagram-card-title'>fixd_aau</span>
+            <a href={post.link}><img className='open-post' src='assets/img/open-post.svg' /></a>
         </div>
         <div className='instagram-card-image'>
             <img src={post.images.standard_resolution.url} />
         </div>
-        <div className='instagram-card-description'>
+        {/* <div className='instagram-card-description'>
             {post.caption.text}
-        </div>
+        </div> */}
     </div>
-)
+);
 
 Instagram.propTypes = {
 

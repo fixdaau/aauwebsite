@@ -5,9 +5,6 @@ import { Row, Col } from 'react-bootstrap';
 import Typist from 'react-typist';
 
 class TopSection extends Component {
-    state = {
-        typistKey: 1
-    }
     
     render() {
         return (
@@ -19,13 +16,14 @@ class TopSection extends Component {
                             We are
                         </div>
                         <div className='title title-green'>
-                            <Typist key={this.state.typistKey} onTypingDone={() => this.setState(prevState => ({ typistKey: prevState.typistKey + 1 }))} avgTypingDelay={130}>
-                                <span>Designers</span>
-                                <Typist.Backspace count={11} delay={200} />
-                                <span>Developers</span>
+                            <Typist avgTypingDelay={130}>
+                                <span className='title title-green'>Designers</span>
+                                <Typist.Backspace count={7} delay={200} />
+                                <span className='title title-green'>velopers</span>
                                 <Typist.Backspace count={10} delay={200} />
-                                <span>Researchers</span>
+                                <span className='title title-green'>Researchers</span>
                                 <Typist.Backspace count={11} delay={200} />
+                                <span className='title title-green'>FixD!</span>
                             </Typist>
                         </div>
                     </div>
